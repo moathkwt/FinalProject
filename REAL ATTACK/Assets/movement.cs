@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-    
+    public Animator anim;
     public float moveSpeed;
     public float jumpForce;
 
@@ -18,6 +18,7 @@ public class movement : MonoBehaviour
     float moveInput;
     Rigidbody2D rb2d;
     float scaleX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +28,12 @@ public class movement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
-        moveInput = Input.GetAxisRaw("Horizontal");
+    {
         
-        
-        Jump();
+          moveInput = Input.GetAxisRaw("Horizontal");
+          anim.SetFloat("Speed", Mathf.Abs(moveInput));
+       
+          Jump();
 
     }
 
@@ -66,7 +68,7 @@ public class movement : MonoBehaviour
             CheckIfGrounded();
             if (jumpsLeft > 0)
             {
-                rb2d.velocity = new Vector2(rb2d.velocity.x, jumpForce);
+                rb2d.velocity = new Vector2(rb2d.velocity.x, jumpForce*8);
                 jumpsLeft--;
             }
 
@@ -76,7 +78,7 @@ public class movement : MonoBehaviour
 
     public void CheckIfGrounded()
     {
-        isGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheck.GetComponent<CircleCollider2D>().radius, GroundLayer);
+        isGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheck.GetComponent<BoxCollider2D>().edgeRadius, GroundLayer);
         ResetJumps();
     }
 
