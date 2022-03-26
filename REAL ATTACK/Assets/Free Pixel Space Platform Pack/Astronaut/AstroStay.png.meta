@@ -1,0 +1,219 @@
+fileFormatVersion: 2
+guid: 7147553b1e72eec449c5ace4f9f4d13a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7984035650691442849
+    second: AstroStay_0
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 120, y: 0, z: 135, w: 15}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AstroStay_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 225
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones:
+      - name: bone_1
+        position: {x: 172.70712, y: 217.56033, z: 0}
+        rotation: {x: 0, y: 0, z: -0.71113604, w: 0.7030544}
+        length: 33.426197
+        parentId: -1
+      - name: bone_2
+        position: {x: 57.903988, y: -0.000038444257, z: 0}
+        rotation: {x: 0, y: 0, z: -0.57289827, w: 0.8196265}
+        length: 9.407795
+        parentId: 14
+      - name: bone_3
+        position: {x: 9.4077835, y: 0.000003537445, z: 0}
+        rotation: {x: 0, y: 0, z: 0.5775727, w: 0.81633925}
+        length: 90.802345
+        parentId: 1
+      - name: bone_4
+        position: {x: 90.802345, y: -0.000017434408, z: 0}
+        rotation: {x: 0, y: 0, z: 0.6618021, w: 0.7496786}
+        length: 16.829176
+        parentId: 2
+      - name: bone_5
+        position: {x: 16.829178, y: -0.0000116164665, z: 0}
+        rotation: {x: 0, y: 0, z: -0.6718687, w: 0.7406703}
+        length: 19.315594
+        parentId: 3
+      - name: bone_6
+        position: {x: 19.315592, y: -0.000014772587, z: 0}
+        rotation: {x: 0, y: 0, z: -0.69749063, w: 0.7165939}
+        length: 46.966763
+        parentId: 4
+      - name: bone_7
+        position: {x: 46.96677, y: 0.00000092593524, z: 0}
+        rotation: {x: 0, y: -0, z: -0.720653, w: 0.693296}
+        length: 80.94772
+        parentId: 5
+      - name: bone_8
+        position: {x: 80.94772, y: 0.000020874026, z: 0}
+        rotation: {x: 0, y: -0, z: -0.7126711, w: 0.7014983}
+        length: 28.744501
+        parentId: 6
+      - name: bone_9
+        position: {x: 28.744495, y: -0.0000007848698, z: 0}
+        rotation: {x: 0, y: -0, z: -0.9998629, w: 0.016562853}
+        length: 122.141266
+        parentId: 7
+      - name: bone_10
+        position: {x: 122.14125, y: 0.000021271815, z: 0}
+        rotation: {x: 0, y: -0, z: 0.72617453, w: 0.6875105}
+        length: 78.32142
+        parentId: 8
+      - name: bone_11
+        position: {x: 78.32142, y: -0.000012574699, z: 0}
+        rotation: {x: 0, y: 0, z: 0.67793274, w: 0.73512393}
+        length: 43.88527
+        parentId: 9
+      - name: bone_12
+        position: {x: 43.885273, y: -0.0000036305219, z: 0}
+        rotation: {x: 0, y: -0, z: 0.712131, w: 0.7020466}
+        length: 15.664241
+        parentId: 10
+      - name: bone_13
+        position: {x: 15.664243, y: -0.0000047373396, z: 0}
+        rotation: {x: 0, y: 0, z: 0.6694923, w: 0.742819}
+        length: 15.276997
+        parentId: 11
+      - name: bone_14
+        position: {x: 15.276996, y: -0.0000014940892, z: 0}
+        rotation: {x: 0, y: 0, z: -0.6671494, w: 0.744924}
+        length: 57.946735
+        parentId: 12
+      - name: bone_15
+        position: {x: 33.42619, y: 0.00001433396, z: 0}
+        rotation: {x: 0, y: 0, z: -0, w: 1}
+        length: 57.903988
+        parentId: 0
+      spriteID: f575b7e70e1033190800000000000000
+      internalID: -7984035650691442849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 30837a9c25abf974487884cec4fc416a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
