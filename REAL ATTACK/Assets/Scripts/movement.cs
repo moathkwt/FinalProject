@@ -10,10 +10,9 @@ public class movement : MonoBehaviour
 
     public int jumpsAmount;
     int jumpsLeft;
-    public Transform GroundCheck;
-    public LayerMask GroundLayer;
+    
 
-    bool isGrounded;
+    
 
     float moveInput;
     Rigidbody2D rb2d;
@@ -32,14 +31,16 @@ public class movement : MonoBehaviour
         
           moveInput = Input.GetAxisRaw("Horizontal");
           anim.SetFloat("Speed", Mathf.Abs(moveInput));
-       
+
           Jump();
+            
 
     }
 
     private void FixedUpdate()
     {
         Move();
+        
     }
 
     public void Move()
@@ -58,6 +59,7 @@ public class movement : MonoBehaviour
         {
             transform.localScale = new Vector3((-1) * scaleX, transform.localScale.y, transform.localScale.z);
         }
+        
     }
 
     public void Jump()
@@ -65,30 +67,16 @@ public class movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            CheckIfGrounded();
-            if (jumpsLeft > 0)
-            {
-                rb2d.velocity = new Vector2(rb2d.velocity.x, jumpForce*8);
-                jumpsLeft--;
-            }
-
+            transform.Translate(Vector3.up * 260 * Time.deltaTime);
+            anim.SetBool("IsJumping", true);
         }
+       
+       
+        
 
     }
 
-    public void CheckIfGrounded()
-    {
-        isGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheck.GetComponent<BoxCollider2D>().edgeRadius, GroundLayer);
-        ResetJumps();
-    }
-
-    public void ResetJumps()
-    {
-        if (isGrounded)
-        {
-            jumpsLeft = jumpsAmount;// jumpsAmount =2;
-        }
-    }
+    
 
 
 }
