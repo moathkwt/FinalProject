@@ -6,14 +6,6 @@ public class movement : MonoBehaviour
 {
     public Animator anim;
     public float moveSpeed;
-    public float jumpForce;
-
-    public int jumpsAmount;
-    int jumpsLeft;
-    
-
-    
-
     float moveInput;
     Rigidbody2D rb2d;
     float scaleX;
@@ -33,13 +25,13 @@ public class movement : MonoBehaviour
           anim.SetFloat("Speed", Mathf.Abs(moveInput));
 
           Jump();
-            
+          Move(); 
 
     }
 
     private void FixedUpdate()
     {
-        Move();
+       
         
     }
 
@@ -68,7 +60,7 @@ public class movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             transform.Translate(Vector3.up * 260 * Time.deltaTime);
-            anim.SetBool("IsJumping", true);
+            
         }
        
        

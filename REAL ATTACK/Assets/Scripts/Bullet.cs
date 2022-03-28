@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rb.velocity = transform.right * speed;
-
+       
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
@@ -26,22 +26,17 @@ public class Bullet : MonoBehaviour
             enemy.TakeDamage(damage);
         }
 
-        DestroyImmediate(gameObject);
+        Destroy(gameObject);
 
 
 
     }
-    public void Flip()
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (moveInput > 0)
-        {
-            transform.localScale = new Vector3(scaleX, transform.localScale.y, transform.localScale.z);
-        }
-        if (moveInput < 0)
-        {
-            transform.localScale = new Vector3((-1) * scaleX, transform.localScale.y, transform.localScale.z);
-        }
-
+        Destroy(gameObject);
     }
+   
+    
 }
 
