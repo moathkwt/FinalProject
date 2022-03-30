@@ -52,6 +52,7 @@ public class movement : MonoBehaviour
             transform.localScale = new Vector3((-1) * scaleX, transform.localScale.y, transform.localScale.z);
         }
         
+        
     }
 
     public void Jump()

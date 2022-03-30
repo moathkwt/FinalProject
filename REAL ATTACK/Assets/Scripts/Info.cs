@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Conrtroller : MonoBehaviour
+public class Info : MonoBehaviour
 {
+
     public void NextScene()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("Start");
-        }
+        SceneManager.LoadScene("Info");
     }
+
 }
