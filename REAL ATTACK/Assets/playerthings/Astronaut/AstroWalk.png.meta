@@ -59,7 +59,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -101,7 +101,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -113,7 +113,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
@@ -150,6 +150,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -157,18 +169,18 @@ TextureImporter:
       name: AstroWalk_0
       rect:
         serializedVersion: 2
-        x: 237
+        x: 238
         y: 0
-        width: 231
-        height: 480
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 229
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f76c7e0bdad32194c8d2b2c9c3f76339
+      spriteID: 594274eff83cf6490800000000000000
       internalID: -7750761410467519339
       vertices: []
       indices: 
@@ -178,18 +190,18 @@ TextureImporter:
       name: AstroWalk_1
       rect:
         serializedVersion: 2
-        x: 657
+        x: 658
         y: 0
-        width: 231
-        height: 480
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 229
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0c5d825e9d8381428ee210771545d13
+      spriteID: a846c32879023b020800000000000000
       internalID: 2356262865142047882
       vertices: []
       indices: 
@@ -199,18 +211,18 @@ TextureImporter:
       name: AstroWalk_2
       rect:
         serializedVersion: 2
-        x: 1107
+        x: 1108
         y: 0
-        width: 231
-        height: 480
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 229
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72ea092f7fa0ae541aadf44bbf005597
+      spriteID: 4e257ff4e2f44c130800000000000000
       internalID: 3586078263622456036
       vertices: []
       indices: 
@@ -220,18 +232,18 @@ TextureImporter:
       name: AstroWalk_3
       rect:
         serializedVersion: 2
-        x: 1527
+        x: 1528
         y: 0
-        width: 231
-        height: 480
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 229
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b295fdf72fb9fbf40862e6acfb39e244
+      spriteID: ef1732ce2b8a579b0800000000000000
       internalID: -5082971117998345730
       vertices: []
       indices: 
@@ -241,18 +253,18 @@ TextureImporter:
       name: AstroWalk_4
       rect:
         serializedVersion: 2
-        x: 1992
+        x: 1993
         y: 0
-        width: 231
-        height: 480
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 229
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f52c70c0fbda7947837e9679384e448
+      spriteID: 565d05c73f32f5340800000000000000
       internalID: 4854638451998381413
       vertices: []
       indices: 
@@ -262,18 +274,18 @@ TextureImporter:
       name: AstroWalk_5
       rect:
         serializedVersion: 2
-        x: 2442
+        x: 2443
         y: 0
-        width: 231
-        height: 480
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 229
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0feaacf3fb6e70f4885a30e2876db3dc
+      spriteID: 3ef0b1b148f350000800000000000000
       internalID: 1477211506544611
       vertices: []
       indices: 
@@ -283,18 +295,18 @@ TextureImporter:
       name: AstroWalk_6
       rect:
         serializedVersion: 2
-        x: 2907
+        x: 2908
         y: 0
-        width: 231
-        height: 480
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 229
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f84fe5323166f664a813d426522872af
+      spriteID: 615e77d779d78b820800000000000000
       internalID: 2934233246830421270
       vertices: []
       indices: 
@@ -304,18 +316,18 @@ TextureImporter:
       name: AstroWalk_7
       rect:
         serializedVersion: 2
-        x: 3402
+        x: 3403
         y: 0
-        width: 231
-        height: 480
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 229
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 802b343084966fa4789776c13b690489
+      spriteID: dc1d9b5064c28c2d0800000000000000
       internalID: -3258305651147157043
       vertices: []
       indices: 

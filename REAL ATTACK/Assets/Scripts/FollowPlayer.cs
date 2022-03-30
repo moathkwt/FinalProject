@@ -4,38 +4,66 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
+    // ------------------------------------------------
+    // Public variables, visible in Unity Inspector
+    // Use these for settings for your script
+    // that can be changed easily
+    // ------------------------------------------------
+    public float forceStrength;     // How fast we move
+    public float stopDistance;      // How close we get before moving to next patrol point
+    public Vector2[] patrolPoints;  // List of patrol points we will go between
 
-    private bool checkTrigger;
-    public float speed;
-    public Transform target;
+    // ------------------------------------------------
+    // Private variables, NOT visible in the Inspector
+    // Use these for tracking data while the game
+    // is running
+    // ------------------------------------------------
+    private int currentPoint = 0;       // Index of the current point we're moving towards
+    private Rigidbody2D ourRigidbody;   // The rigidbody attached to this object
 
-    void Start()
+    // ------------------------------------------------
+    // Awake is called when the script is loaded
+    // ------------------------------------------------
+    void Awake()
     {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        // Get the rigidbody that we'll be using for movement
+        ourRigidbody = GetComponent<Rigidbody2D>();
     }
 
+
+    // ------------------------------------------------
     // Update is called once per frame
+    // ------------------------------------------------
     void Update()
     {
-        if (checkTrigger)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-        }
-    }
+        // How far away are we from the target?
+        float distance = (patrolPoints[currentPoint] - (Vector2)transform.position).magnitude;
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.name == "Player")
+        // If we are closer to our target than our minimum distance...
+        if (distance <= stopDistance)
         {
-            checkTrigger = true;
-        }
-    }
+            // Update to the next target
+            currentPoint = currentPoint + 1;
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.name == "Player")
-        {
-            checkTrigger = false;
+            // If we've gone past the end of our list...
+            // (if our current point index is equal or bigger than
+            // the length of our list)
+            if (currentPoint >= patrolPoints.Length)
+            {
+                // ...loop back to the start by setting 
+                // the current point index to 0
+                currentPoint = 0;
+            }
         }
+
+        // Now, move in the direction of our target
+
+        // Get the direction
+        // Subtract the current position from the target position to get a distance vector
+        // Normalise changes it to be length 1, so we can then multiply it by our speed / force
+        Vector2 direction = (patrolPoints[currentPoint] - (Vector2)transform.position).normalized;
+
+        // Move in the correct direction with the set force strength
+        ourRigidbody.AddForce(direction * forceStrength);
     }
 }

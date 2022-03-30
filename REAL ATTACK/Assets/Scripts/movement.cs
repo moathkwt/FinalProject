@@ -55,13 +55,18 @@ public class movement : MonoBehaviour
         
     }
 
-    public void Jump()
+     void Jump()
     {
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             transform.Translate(Vector3.up * 260 * Time.deltaTime);
-            
+            anim.SetBool("IsJumping",true);
+
+        }
+        else
+        {
+            anim.SetBool("IsJumping", false);
         }
        
        
