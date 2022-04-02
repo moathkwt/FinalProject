@@ -43,10 +43,17 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
     }
+
+
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Start");
+    }
+    public void GoToLevels()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Levels");
     }
     public void QuitGame()
     {
