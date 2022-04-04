@@ -53,7 +53,12 @@ public class movement : MonoBehaviour
         {
             SceneManager.LoadScene("Lv1");
         }
+        if (other.gameObject.tag == "Enemy1")
+        {
+            SceneManager.LoadScene("Lv2");
+        }
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Coins"))

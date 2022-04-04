@@ -5,11 +5,35 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
+    public GameObject Youwin;
+    // Start is called before the first frame update
+    void Start()
+    {
+        Youwin.SetActive(false);
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject)
+        if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Lv2");
+            
+            Youwin.SetActive(true);
         }
+        
+
+    }
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Start");
+    }
+    public void GoToLevels()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Levels");
+    }
+    public void GoToNextLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Lv2");
     }
 }
